@@ -73,14 +73,15 @@ def update_todo(todo_id, changes):
 
 # ---------- DELETE ----------
 
-def delete_todo(todo_id):
-    """Returns False if the todo doesn't exist."""
-    with Session(engine) as session:
-        todo = session.get(Todo, todo_id)
+# def delete_todo(todo_id):
+#     """Returns False if the todo doesn't exist."""
+#     with Session(engine) as session:
+#         todo = session.get(Todo, todo_id)
 
-        if todo is None:
-            return False
+#         if todo is None:
+#             return False
 
-        session.delete(todo)
-        session.commit()
-        return True
+#         session.delete(todo)
+#         session.commit()
+#         return True
+g
